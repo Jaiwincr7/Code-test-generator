@@ -4,3 +4,4 @@ streamlit
 fpdf
 langchain-core
 langchain-huggingface
+accelerate
