@@ -6,7 +6,7 @@ from transformers import (
 )
 from threading import Thread
 
-MODEL_PATH = "https://drive.google.com/drive/folders/1WQrL__nkL52456C37Z4JC43hmsWISVa0?usp=sharing"
+MODEL_PATH = "jaiwinrc7/Qwen2.5-Coder-0.5B-finetunned-merged"
 
 
 def load_model_and_tokenizer():
@@ -67,4 +67,5 @@ def generate_code_stream(lang, user_input, tokenizer, model):
     # Yield tokens as they arrive
     for token in streamer:
         yield token
+
 
